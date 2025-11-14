@@ -1,7 +1,8 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "http://localhost:5000/api/pets",
+  // baseURL: "http://localhost:5000/api/pets",
+  baseURL: "https://virtual-pet-simulator.onrender.com/api/pets",
 });
 
 export const getPets = () => API.get("/");

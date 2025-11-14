@@ -12,6 +12,7 @@ export const createPet = async (req, res) => {
 
 // Get all pets
 export const getPets = async (req, res) => {
+  // await Pet.deleteMany();
   const pets = await Pet.find();
   res.json(pets);
 };
